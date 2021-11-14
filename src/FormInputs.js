@@ -84,7 +84,7 @@ export default class FormInputs extends Component {
                 <br />
               </div>
 
-              <div class="d-grid gap-2">
+              <div className="d-grid gap-2">
                 <button className="btn btn-primary btn-block">
                   Créez votre Fiche !
                 </button>
