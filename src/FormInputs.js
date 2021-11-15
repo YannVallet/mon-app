@@ -5,6 +5,7 @@ export default class FormInputs extends Component {
     nom: "",
     age: "",
     ville: "",
+    photo: "",
     items: [],
   };
 
@@ -21,9 +22,13 @@ export default class FormInputs extends Component {
       nom: "",
       age: "",
       ville: "",
+
       items: [
         ...this.state.items,
-        { nom: this.state.nom, age: this.state.age, ville: this.state.ville },
+        {
+          nom: this.state.nom,
+          age: this.state.age,
+        },
       ],
     });
   };
@@ -81,10 +86,10 @@ export default class FormInputs extends Component {
                   onChange={this.onChange}
                   value={this.state.ville}
                 />
-                <br />
               </div>
 
               <div className="d-grid gap-2">
+                <br />
                 <button className="btn btn-primary btn-block">
                   Créez votre Fiche !
                 </button>
